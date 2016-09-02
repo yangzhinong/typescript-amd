@@ -1,0 +1,6 @@
+c:\users\微软用户\documents\visual studio 2013\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptHTMLApp1.dll.config
+c:\users\微软用户\documents\visual studio 2013\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptHTMLApp1.dll
+c:\users\微软用户\documents\visual studio 2013\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptHTMLApp1.pdb
+c:\users\微软用户\documents\visual studio 2013\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptHTMLApp1.csprojResolveAssemblyReference.cache
+c:\users\微软用户\documents\visual studio 2013\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptHTMLApp1.dll
+c:\users\微软用户\documents\visual studio 2013\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptHTMLApp1.pdb
