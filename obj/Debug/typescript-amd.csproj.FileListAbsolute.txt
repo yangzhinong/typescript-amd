@@ -8,3 +8,9 @@ F:\typescript-amd-master\bin\typescript-amd.dll
 F:\typescript-amd-master\bin\typescript-amd.pdb
 F:\typescript-amd-master\obj\Debug\typescript-amd.dll
 F:\typescript-amd-master\obj\Debug\typescript-amd.pdb
+F:\typescript-amd\bin\typescript-amd.dll.config
+F:\typescript-amd\bin\typescript-amd.dll
+F:\typescript-amd\bin\typescript-amd.pdb
+F:\typescript-amd\obj\Debug\typescript-amd.csprojResolveAssemblyReference.cache
+F:\typescript-amd\obj\Debug\typescript-amd.dll
+F:\typescript-amd\obj\Debug\typescript-amd.pdb

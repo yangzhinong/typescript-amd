@@ -41,6 +41,36 @@
     </Content>
     <TypeScriptCompile Include="app\scripts\tsmodule\tsmoduleDependency.ts" />
     <TypeScriptCompile Include="app\scripts\tsmodule\tsmodule.ts" />
+    <TypeScriptCompile Include="app\yzn\lib\Print.ts" />
+    <TypeScriptCompile Include="app\yzn\lib\yznClass.ts" />
+    <TypeScriptCompile Include="app\yzn\lib\yznLog.ts" />
+    <TypeScriptCompile Include="app\yzn\main2.ts" />
+    <TypeScriptCompile Include="typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="typings\bootstrap-dialog\bootstrap-dialog.d.ts" />
+    <TypeScriptCompile Include="typings\bootstrap\bootstrap.d.ts" />
+    <TypeScriptCompile Include="typings\chosen\chosen.jquery.d.ts" />
+    <TypeScriptCompile Include="typings\jquery.validation\jquery.validation.d.ts" />
+    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="typings\react-bootstrap\react-bootstrap.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-create-fragment.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-css-transition-group.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-linked-state-mixin.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-perf.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-pure-render-mixin.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-test-utils.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-transition-group.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-update.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-dom.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-global.d.ts" />
+    <TypeScriptCompile Include="typings\react\react.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="typings\yzn\bootstrapSelect.d.ts" />
+    <TypeScriptCompile Include="typings\yzn\bootstrapSuggest.d.ts" />
+    <TypeScriptCompile Include="typings\yzn\bootstrapTable.d.ts" />
+    <TypeScriptCompile Include="typings\yzn\html5valid.d.ts" />
+    <TypeScriptCompile Include="typings\yzn\jsonMsg.d.ts" />
+    <TypeScriptCompile Include="typings\yzn\layer.d.ts" />
+    <TypeScriptCompile Include="typings\yzn\windows.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\scripts\app.ts" />
@@ -51,6 +81,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\yzn\main2.js" />
+    <Content Include="index.htm" />
+    <Content Include="typings\yzn\readme.txt" />
     <Content Include="web.config" />
     <Content Include="app\scripts\tsmodule\tsmodule.js.map">
       <DependentUpon>tsmodule.ts</DependentUpon>
@@ -61,6 +94,7 @@
     <Content Include="app\scripts\app.min.js.map">
       <DependentUpon>app.min.js</DependentUpon>
     </Content>
+    <Content Include="tsd.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -68,7 +102,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="typings\requirejs\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
