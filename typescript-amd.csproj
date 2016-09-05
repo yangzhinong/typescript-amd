@@ -16,7 +16,9 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="AngluarTest\HtmlPage1.html" />
     <Content Include="app\css\app.css" />
+    <Content Include="app\lib\angular.js" />
     <Content Include="app\scripts\js\legacyJs.js" />
     <Content Include="app\scripts\js\legacyJsDependency.js" />
     <Content Include="app\scripts\app.min.js">
@@ -39,6 +41,7 @@
     <Content Include="app\scripts\tsmodule\tsmoduleDependency.js">
       <DependentUpon>tsmoduleDependency.ts</DependentUpon>
     </Content>
+    <TypeScriptCompile Include="AngluarTest\AngluarTest.ts" />
     <TypeScriptCompile Include="app\scripts\tsmodule\tsmoduleDependency.ts" />
     <TypeScriptCompile Include="app\scripts\tsmodule\tsmodule.ts" />
     <TypeScriptCompile Include="app\yzn\lib\Print.ts" />

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../app/lib/angular.js"></script>
+    <script src="AngluarTest.js"></script>
+</head>
+<body ng-app="AngluarTest.myApp">
+    <div ng-controller="AngluarTest.myController">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        name
+                    </th>
+                    <th>likes</th>
+                    <th>dislikes</th>
+                    <th>Operation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="test in tests">
+                    <td>{{test.name}}</td>
+                    <td>{{test.likes}}</td>
+                    <td>{{test.dislikes}}</td>
+                    <td>
+                        <input type="button" ng-click="addLike(test)" value="Add Like" />
+                        <input type="button" ng-click="decLike(test)" value="Add Like" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+
