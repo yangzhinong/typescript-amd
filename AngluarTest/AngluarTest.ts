@@ -7,7 +7,8 @@
 
 }
 
-var myApp = angular.module("myApp", [])
+var myApp = angular.module("myApp", ["ngRoute"])
+    
     .filter("gender", function () {
         return function (gender:number) {
             switch (gender) {
@@ -21,8 +22,12 @@ var myApp = angular.module("myApp", [])
             }
         }
     })
-        .controller("myController", function ($scope,$http:angular.IHttpService) {
-            
+    .controller("myController", function ($scope, $http: angular.IHttpService, $log: angular.ILogService,$location:angular.ILocationService, $anchorScroll:angular.IAnchorScrollService) {
+        $scope.relocationTo=function(id:string){
+            $location.hash(id);
+            $anchorScroll.yOffset(20);
+            $anchorScroll();
+        }
             var tests: angularTest.Test[] = [
                 { name: 'yzn', likes: 5, dislikes: 0 },
                 { name: 'yq', likes: 0, dislikes: 0 },
@@ -37,9 +42,9 @@ var myApp = angular.module("myApp", [])
             $scope.decLike = function (t:angularTest.Test) {
                 t.dislikes++;
             };
-            $http.post('').then(function (data: IJsonMsg) { });
+            $http.post('').then(function (data: IJsonMsg) { }, function (reason) { $scope.error = reason; });
             
-            $http({method:'GET',url:''}).then(function () { });
+            $http({method:'GET',url:''}).then(function () { $log.log(''});
 
 
             

@@ -11,7 +11,12 @@ var myApp = angular.module("myApp", [])
         }
     };
 })
-    .controller("myController", function ($scope, $http) {
+    .controller("myController", function ($scope, $http, $log, $location, $anchorScroll) {
+    $scope.relocationTo = function (id) {
+        $location.hash(id);
+        $anchorScroll.yOffset(20);
+        $anchorScroll();
+    };
     var tests = [
         { name: 'yzn', likes: 5, dislikes: 0 },
         { name: 'yq', likes: 0, dislikes: 0 },
@@ -25,7 +30,7 @@ var myApp = angular.module("myApp", [])
     $scope.decLike = function (t) {
         t.dislikes++;
     };
-    $http.post('').then(function (data) { });
-    $http({ method: 'GET', url: '' }).then(function () { });
+    $http.post('').then(function (data) { }, function (reason) { $scope.error = reason; });
+    $http({ method: 'GET', url: '' }).then(function () { $log.log(''); });
 });
 //# sourceMappingURL=AngluarTest.js.map
