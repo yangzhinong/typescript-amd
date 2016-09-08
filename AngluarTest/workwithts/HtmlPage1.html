@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp2">
+<head>
+    <title></title>
+    <script src="../../app/lib/angular.js"></script>
+    <script src="../../app/lib/require.js"></script>
+    <script src="../../yznsingefileapp.js"></script>
+</head>
+<body>
+    <div ng-controller="MyController as mc">
+        <ul ng-repeat="d in mc.data">
+            <li>Name:{{d.name}} Age: {{d.age}}</li>
+        </ul>
+        <button ng-click="mc.GetAll()">Get ALL</button>
+    </div>
+</body>
+</html>

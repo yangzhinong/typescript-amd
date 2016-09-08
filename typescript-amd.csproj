@@ -17,6 +17,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="AngluarTest\HtmlPage1.html" />
+    <Content Include="AngluarTest\HtmlPage2.html" />
+    <Content Include="AngluarTest\workwithts\HtmlPage1.html" />
     <Content Include="app\css\app.css" />
     <Content Include="app\lib\angular.js" />
     <Content Include="app\scripts\js\legacyJs.js" />
@@ -42,6 +44,9 @@
       <DependentUpon>tsmoduleDependency.ts</DependentUpon>
     </Content>
     <TypeScriptCompile Include="AngluarTest\AngluarTest.ts" />
+    <TypeScriptCompile Include="AngluarTest\workwithts\app.ts" />
+    <TypeScriptCompile Include="AngluarTest\workwithts\MyController.ts" />
+    <TypeScriptCompile Include="AngluarTest\workwithts\MyService.ts" />
     <TypeScriptCompile Include="app\scripts\tsmodule\tsmoduleDependency.ts" />
     <TypeScriptCompile Include="app\scripts\tsmodule\tsmodule.ts" />
     <TypeScriptCompile Include="app\yzn\lib\Print.ts" />
@@ -140,6 +145,7 @@
     <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptOutFile>yznsingefileapp.js</TypeScriptOutFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptTarget>ES3</TypeScriptTarget>

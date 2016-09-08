@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="">
+<head>
+    <title></title>
+</head>
+<body ng-init="customers=[{name:'John Smith'},{name:'John Doe'}, {name:'Jane Doe'},{name:'yzn'}]">
+    <div class="container">
+        Name: <input type="text" ng-model="nameText" /> {{nameText}}
+    </div>
+
+    <ul>
+        <li ng-repeat="cust in customers | orderBy:'name' | filter:nameText">
+            {{cust.name | uppercase}}
+        </li>
+    </ul>
+
+
+    <script src="../app/lib/angular.js"></script>
+</body>
+</html>
