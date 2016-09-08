@@ -5,6 +5,21 @@
     <script src="../../app/lib/angular.js"></script>
     <script src="../../app/lib/require.js"></script>
     <script src="../../yznsingefileapp.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lte IE 8]>
+                <script>
+                    document.createElement('ng-include');
+                    document.createElement('ng-pluralize');
+                    document.createElement('ng-view');
+                    document.createElement('my-directive');
+                    document.createElement('ng:include');
+                    document.createElement('ng:pluralize');
+                    document.createElement('ng:view');
+                </script>
+                <script src="libs/es5-shim/es5-shim.js"></script>
+                <script src="libs/JSON/json3.js"></script>
+            <![endif]-->
+
 </head>
 <body>
     <div ng-controller="MyController as mc">
